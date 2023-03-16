@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns2:tradeConfirmationItem xmlns:ns2="com.exxeta.marketadapters.trade"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <userId>user_123</userId>
+    <contract>
+        <contractId>CONTRACT_11299</contractId>
+        <contractTitle>CONTRACT SUPER DUPPER</contractTitle>
+        <quantity>5</quantity>
+        <price>1000</price>
+        <product>Product Phoenix</product>
+        <trader>
+            <traderName> Trader One</traderName>
+            <traderId>trader_1</traderId>
+        </trader>
+    </contract>
+</ns2:tradeConfirmationItem>
