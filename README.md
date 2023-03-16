@@ -17,6 +17,11 @@ Use maven package manager to run the application.
 ./mvnw spring-boot:run
 ```
 
+### Usage
+1. Start the application 
+2. Navigate to http://localhost:8080 to open the openapi swagger ui.
+3. Use files for `./DATA/input.xml` and `./DATA/xml2json.liquid` for testing.
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
