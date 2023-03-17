@@ -11,23 +11,38 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
+import org.apache.commons.io.FilenameUtils;
+
 import liqp.Template;
 
 @RestController
 @RequestMapping("api/v1")
 public class ParserController {
 
-    @PostMapping(path = "/parseXML", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
-    public String handleFileUpload(@RequestParam("xml") MultipartFile xml,
+    @PostMapping(path = "/render", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
+    public String renderTemplate(@RequestParam("input") MultipartFile input,
             @RequestParam("template") MultipartFile templateFile) {
 
+        String extension = FilenameUtils.getExtension(input.getOriginalFilename());
+
+        String inputString;
         String rendered = "";
 
         try {
-            String xmlString = convertXMLtoJSON(xml.getBytes());
+
+            switch (extension) {
+                case "xml":
+                    inputString = convertXMLtoJSON(input.getBytes());
+                    break;
+                case "json":
+                    inputString = new String(input.getBytes());
+                    break;
+                default:
+                    inputString = "";
+            }
 
             Template template = Template.parse(new String(templateFile.getBytes()));
-            rendered = template.render(xmlString);
+            rendered = template.render(inputString);
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
