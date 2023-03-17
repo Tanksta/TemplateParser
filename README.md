@@ -1,5 +1,4 @@
-# XML Parser
-
+# Template Parser
 Spring Boot REST API sample, that parses a xml file based on a liquid template structure.
 
 ## Getting Started
