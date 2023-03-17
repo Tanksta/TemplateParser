@@ -1,0 +1,14 @@
+{
+    "userId": "user_123",
+    "contract": {
+        "contractId": "CONTRACT_11299",
+        "contractTitle": "CONTRACT SUPER DUPPER",
+        "quantity": "5",
+        "price": "1000",
+        "product": "Product Phoenix",
+        "trader": {
+            "traderName": " Trader One",
+            "traderId": "trader_1"
+        }
+    }
+}
