@@ -1,0 +1,11 @@
+{
+    "UserID": "user_123",
+    "ContractID": "CONTRACT_11299",
+    "ContractTitle": "CONTRACT SUPER DUPPER",
+    "Quantity": "5",
+    "Price": "1000",
+    "Product": "Product Phoenix",
+    "Trader": " Trader One",
+    "TraderId": "trader_1",
+    "NewDefaultValueThatIsNotinXML": "Default"
+ }

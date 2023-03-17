@@ -1,5 +1,4 @@
-# XML Parser
-
+# Template Parser
 Spring Boot REST API sample, that parses a xml file based on a liquid template structure.
 
 ## Getting Started
@@ -20,7 +19,7 @@ Use maven package manager to run the application.
 ### Usage
 1. Start the application 
 2. Navigate to http://localhost:8080 to open the openapi swagger ui.
-3. Use files for `./DATA/input.xml` and `./DATA/xml2json.liquid` for testing.
+3. Use files for `./fixtures/input.xml` and `./fixtures/xml2json.liquid` for testing.
 
 ## Contributing
 
